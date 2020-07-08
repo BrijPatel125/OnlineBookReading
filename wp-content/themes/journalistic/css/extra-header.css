@@ -1,0 +1,54 @@
+/* For developers: use this CSS to make the navigation not transparent and not sticky, just add this to the bottom of style css */
+.navbar {
+    margin-bottom: 0!important;
+    border-bottom: 0 solid #e2e2e2;
+    box-shadow: 0 0 0 rgba(100, 100, 0, 0)!important
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    position: absolute;
+    top: 0;
+    z-index: 1030
+}
+
+.admin-bar .navbar-fixed-top {
+    top: 32px
+}
+
+@media (min-width:768px) {
+    body .lh-nav-bg-transform {
+        background-color: rgba(255, 255, 255, 0);
+        -webkit-box-shadow: 0 0 0 transparent!important;
+        box-shadow: 0 0 0 transparent!important
+    }
+}
+
+@media (max-width:782px) {
+    .home.admin-bar .navbar-fixed-top {
+        top: 46px
+    }
+}
+
+@media (max-width:767px) {
+    .lh-nav-bg-transform {
+        position: static
+    }
+    .lh-nav-bg-transform .navbar-nav>li>a {
+        text-shadow: 0 0 0 transparent
+    }
+}
+
+@media (min-width:768px) {
+    .lh-nav-bg-transform .navbar-nav>li>a,
+    .lh-nav-bg-transform.navbar-default .navbar-brand {
+        color: #ccc;
+    }
+    .lh-nav-bg-transform.navbar-default .navbar-brand {
+        color: #fff;
+    }
+    .top-header-img .archive-page-header,
+    .top-header-img .search-page-header {
+        display: none;
+    }
+}
